@@ -9,7 +9,7 @@ import { RxCross2 } from 'react-icons/rx';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const isAboveMediaScreen = useMediaQuery('(min-width:1060px)');
+  const isAboveMediaScreen = useMediaQuery('(min-width:1160px)');
 
   useEffect(() => {
     const onKeyPress = (e) => {

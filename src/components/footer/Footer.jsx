@@ -5,7 +5,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { useMediaQuery } from '@mui/material';
 
 const Footer = () => {
-  const isAboveMediaScreen = useMediaQuery('(min-width:1060px)');
+  const isAboveMediaScreen = useMediaQuery('(min-width:1160px)');
   return (
     <footer className="w-full block ml-auto mr-auto md:flex justify-between gap-7 py-5  px-10 md:px-16 bg-black">
       <div>
