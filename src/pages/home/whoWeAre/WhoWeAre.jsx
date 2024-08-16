@@ -51,16 +51,16 @@ const WhoWeAre = () => {
           <h2 className="text-3xl font-bold mb-16">WHO WE ARE</h2>
           <div className="m-auto max-w-[650px] mb-8 sm:mb-16">
             <h3 className="font-normal text-lg">
-              At Liberty Shine Services, window cleaning is our specialty. It's
-              our main service and we excel at it. Window cleaning is an art
-              that each of our technicians has been meticulously trained in. We
-              deliver the stunning sparkle of clean windows that brightens your
-              home with sunlight. We bring the light in.
+              At Liberty Shine Services LLC, window cleaning is our specialty.
+              It's our main service and we excel at it. Window cleaning is an
+              art that each of our technicians has been meticulously trained in.
+              We deliver the stunning sparkle of clean windows that brightens
+              your home with sunlight. We bring the light in.
             </h3>
           </div>
           {/* className="flex flex-col sm:flex items-baseline justify-evenly py-16" */}
           <div className="">
-            <motion.div
+            <motion.ul
               className="flex flex-col md:flex-row items-center justify-center sm:justify-evenly w-full h-full"
               initial="hidden"
               whileInView="visible"
@@ -74,7 +74,7 @@ const WhoWeAre = () => {
                   text={feature.text}
                 />
               ))}
-            </motion.div>
+            </motion.ul>
           </div>
         </div>
       </motion.div>

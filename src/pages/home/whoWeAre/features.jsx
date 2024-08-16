@@ -6,16 +6,17 @@ export const features = [
   {
     id: 'f123kasd',
     icon: <IoCheckmarkDoneSharp fontSize={50} />,
-    text: 'We are fully insured to protect both our team and your property. Ourcomprehensive insurance coverage guarantees financial protection in the rare event of any unforeseen incidents during our services, ensuring complete peace of mind for our valued customers.',
+    text: 'Our team and your property are fully protected with our extensive insurance coverage. This comprehensive protection offers financial security in the unlikely event of any unexpected incidents during our window cleaning services, providing our customers with total peace of mind.',
   },
   {
     id: 'dsf23434',
     icon: <FaRegListAlt fontSize={50} />,
-    text: 'Our team consists of home o busin SS IS In professional technicians who good hand have undergone rigorous background checks.You can trust that our staff is reliable, trustworthy, and committed to delivering exceptional service with.',
+    text: 'Our team is made up of highly skilled technicians who have passed thorough background checks. You can trust that our staff is dependable, trustworthy, and dedicated to providing outstanding service.',
   },
   {
     id: 'f143asdf',
     icon: <FaLeaf fontSize={55} fill="green" />,
-    text: 'We offer eco - friendly options to prioritize sustainability and your well - being. Our environmentally conscious solutions ensure a clean, healthy environment without compromising on effectiveness.',
+    className: 'bg-green',
+    text: 'We provide eco-friendly cleaning options that prioritize both sustainability and your well-being. Our green solutions deliver a spotless, healthy environment without sacrificing effectiveness.',
   },
 ];

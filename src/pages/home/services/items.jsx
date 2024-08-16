@@ -10,7 +10,7 @@ export const services = [
     id: '8792kqhsd',
     icon: <FaHandsWash style={{ fontSize: 70 }} />,
     title: 'GUTTER CLEANING',
-    text: 'Experience hassle-free gutter cleaning with our professional services tailored for residential, commercial, and new construction properties. Our skilled team uses advanced equipment and techniques to efficiently remove debris and ensure your gutters operate smoothly. Protect your investment and maintain curb appeal with our reliable gutter cleaning solutions, backed by options for regular maintenance contracts to keep your property in top shape.',
+    text: 'Enjoy seamless gutter cleaning with our expert services designed for residential, commercial, and new construction properties. Our experienced team utilizes cutting-edge equipment and methods to effectively clear debris, ensuring your gutters function perfectly. Safeguard your investment and enhance curb appeal with our dependable gutter cleaning solutions, including options for regular maintenance contracts to keep your property in prime condition.',
   },
   {
     id: '9043ljsfd',

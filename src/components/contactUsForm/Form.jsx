@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 import Input from '../../ui/input/Input';
 
-import { useSubmitFormData } from '../../hooks/useSubmitFormData';
 import { ValidationError } from '@formspree/react';
+import { useSubmitFormData } from '../../hooks/useSubmitFormData';
 
 const Form = () => {
-  const { state, handleSubmit } = useSubmitFormData();
+  const [state, handleSubmit] = useSubmitFormData();
 
   if (state.submitting) {
     return <p className="text-2xl">Submitting...</p>;
@@ -79,18 +79,18 @@ const Form = () => {
       {/* full width adress input */}
       <div className="">
         <label>
-          <span className="flex">Adress</span>
+          <span className="flex">Address</span>
           <ValidationError
-            prefix="Adress"
-            field="adress"
+            prefix="Address"
+            field="address"
             errors={state.errors}
           />
 
           <Input
             type="text"
-            placeholder="Adress"
+            placeholder="Address"
             required
-            name="adress"
+            name="address"
             long="true"
             // {...register('adress', { required: true, minLength: 10 })}
           />

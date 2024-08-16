@@ -1,10 +1,8 @@
 import React from 'react';
 import { FaPhone } from 'react-icons/fa6';
 import Form from './Form';
-import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 const ContactUsForm = () => {
-  const isAboveMediaScreen = useMediaQuery('(min-width:1060px)');
   return (
     <section className="mx-auto py-24 px-10 md:w-5/6 text-black" id="callUs">
       <div className="flex flex-col justify-center md:flex-row items-center md:justify-between">
@@ -26,11 +24,8 @@ const ContactUsForm = () => {
             <span>
               <FaPhone fill="#54c036" fontSize={32} />
             </span>
-            <a
-              className="text-black text-2xl ml-3"
-              href="tel:(123) 123-123-1234"
-            >
-              (123) 123-123-1234
+            <a className="text-black text-2xl ml-3" href="tel:941 228 3012">
+              941 228 3012
             </a>
           </div>
         </div>

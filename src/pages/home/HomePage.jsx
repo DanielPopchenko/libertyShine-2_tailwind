@@ -49,7 +49,7 @@ const Home = () => {
               </a>
               {/* PHONE NUMBER SHOUL BE CHANGED*/}
               <a
-                href="tel:(123) 123-123-1234"
+                href="tel:941 228 3012"
                 className="py-3 px-4 md:px-6 min-w-20 md:min-w-32 bg-primary-200 text-white rounded-lg text-wrap transition-all hover:text-secondary-500 hover:opacity-80"
               >
                 GIVE US A FREE CALL

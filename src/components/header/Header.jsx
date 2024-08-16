@@ -73,14 +73,16 @@ const Header = () => {
       {isAboveMediaScreen ? (
         <div className="">
           <ul className="flex items-center gap-6">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? `text-secondary-400` : ''
-              }
-            >
-              HOME
-            </NavLink>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? `text-secondary-400` : ''
+                }
+              >
+                HOME
+              </NavLink>
+            </li>
 
             {/* {pathname === '/' && ( */}
             <li>
@@ -128,108 +130,118 @@ const Header = () => {
       {/* Mobile nav */}
 
       {!isAboveMediaScreen && openMenu && (
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={container}
-          className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-200 text-black drop-shadow-xl"
-        >
-          {/* close icon */}
-          <div className="flex justify-end p-12">
-            <button onClick={() => setOpenMenu((prev) => !prev)}>
-              <RxCross2 className="text-gray-200 w-9 h-9" />
-            </button>
-          </div>
-          {/* ! MENU ITEMS ! */}
-          <div className="flex text-center flex-col gap-10">
-            <ul className="flex flex-col gap-10 text-2xl">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? `text-secondary-400` : ''
-                }
-              >
-                HOME
-              </NavLink>
+        <div className="absolute top-0 left-0 h-screen w-full">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={container}
+            className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-200 text-black drop-shadow-xl"
+          >
+            {/* close icon */}
+            <div className="flex justify-end p-12">
+              <button onClick={() => setOpenMenu((prev) => !prev)}>
+                <RxCross2 className="text-gray-200 w-9 h-9" />
+              </button>
+            </div>
+            {/* ! MENU ITEMS ! */}
+            <div className="flex text-center flex-col gap-10">
+              <ul className="flex flex-col gap-10 text-2xl">
+                <li>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? `text-secondary-400` : ''
+                    }
+                  >
+                    HOME
+                  </NavLink>
+                </li>
 
-              {/* {pathname === '/' && ( */}
+                {/* {pathname === '/' && ( */}
+                <li>
+                  <NavLink
+                    to="/services"
+                    className={({ isActive }) =>
+                      isActive ? `text-secondary-400` : ''
+                    }
+                  >
+                    SERVICES
+                  </NavLink>
+                </li>
+                {/* )} */}
+                <li>
+                  <NavLink
+                    to="/portfolio"
+                    className={({ isActive }) =>
+                      isActive ? `text-secondary-400` : ''
+                    }
+                  >
+                    PORTFOLIO
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/questions"
+                    className={({ isActive }) =>
+                      isActive ? `text-secondary-400` : ''
+                    }
+                  >
+                    FAQ’S
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            {/* Locations */}
+            <ul className="text-white mt-56 flex items-center flex-col gap-8">
+              {/* <IoLogoCodepen fontSize={40} style={{ marginRight: 10 }} />{' '} */}
               <li>
-                <NavLink
-                  to="/services"
-                  className={({ isActive }) =>
-                    isActive ? `text-secondary-400` : ''
-                  }
+                <motion.span
+                  className="flex items-center font-bold"
+                  variants={item}
                 >
-                  SERVICES
-                </NavLink>
+                  <FaLocationDot
+                    fontSize={25}
+                    style={{
+                      marginRight: 10,
+                    }}
+                    fill="rgb(243, 189, 28)"
+                  />{' '}
+                  MANATEE COUNTY
+                </motion.span>
               </li>
-              {/* )} */}
               <li>
-                <NavLink
-                  to="/portfolio"
-                  className={({ isActive }) =>
-                    isActive ? `text-secondary-400` : ''
-                  }
+                <motion.span
+                  className="flex items-center font-bold"
+                  variants={item}
                 >
-                  PORTFOLIO
-                </NavLink>
+                  <FaLocationDot
+                    fontSize={25}
+                    style={{
+                      marginRight: 10,
+                    }}
+                    fill="rgb(243, 189, 28)"
+                  />{' '}
+                  SARASOTA COUNTY
+                </motion.span>
               </li>
               <li>
-                <NavLink
-                  to="/questions"
-                  className={({ isActive }) =>
-                    isActive ? `text-secondary-400` : ''
-                  }
+                <motion.span
+                  className="flex items-center font-bold"
+                  variants={item}
                 >
-                  FAQ’S
-                </NavLink>
+                  <FaLocationDot
+                    fontSize={25}
+                    style={{
+                      marginRight: 10,
+                    }}
+                    fill="rgb(243, 189, 28)"
+                  />{' '}
+                  HILLSBOROUGH COUNTY
+                </motion.span>
               </li>
             </ul>
-          </div>
-          {/* Locations */}
-          <div className="text-white mt-56 flex items-center flex-col gap-8">
-            {/* <IoLogoCodepen fontSize={40} style={{ marginRight: 10 }} />{' '} */}
-            <motion.span
-              className="flex items-center font-bold"
-              variants={item}
-            >
-              <FaLocationDot
-                fontSize={25}
-                style={{
-                  marginRight: 10,
-                }}
-                fill="rgb(243, 189, 28)"
-              />{' '}
-              MANATEE COUNTY
-            </motion.span>
-            <motion.span
-              className="flex items-center font-bold"
-              variants={item}
-            >
-              <FaLocationDot
-                fontSize={25}
-                style={{
-                  marginRight: 10,
-                }}
-                fill="rgb(243, 189, 28)"
-              />{' '}
-              SARASOTA COUNTY
-            </motion.span>
-            <motion.span
-              className="flex items-center font-bold"
-              variants={item}
-            >
-              <FaLocationDot
-                fontSize={25}
-                style={{
-                  marginRight: 10,
-                }}
-                fill="rgb(243, 189, 28)"
-              />{' '}
-              HILLSBOROUGH COUNTY
-            </motion.span>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       )}
     </nav>
   );

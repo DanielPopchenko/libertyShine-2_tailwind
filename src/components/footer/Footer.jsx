@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="w-full block ml-auto mr-auto md:flex justify-between gap-7 py-5  px-10 md:px-16 bg-black">
       <div>
         <Link
-          className="cursor-pointer font-bold text-xl text-secondary-400"
+          className="cursor-pointer font-bold text-lg text-secondary-400"
           to="/"
         >
           LIBERTY SHINE SERVICES
@@ -36,8 +36,10 @@ const Footer = () => {
         <div className="inline-block md:flex items-center">
           <span>
             <FaPhone fill="green" fontSize={32} />
-          </span>{' '}
-          <p className="text-xl ml-3">(123) 123-123-1234</p>
+          </span>
+          <a className="text-lg ml-3" href="tel:941 228 3012">
+            941 228 3012
+          </a>
         </div>
       )}
     </footer>
