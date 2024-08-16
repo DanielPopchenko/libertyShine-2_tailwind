@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { FaLocationDot } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { RxCross2 } from 'react-icons/rx';
+import { useOnClickOutside } from '../../hooks/useOnClickOutside';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const isAboveMediaScreen = useMediaQuery('(min-width:1160px)');
-
   useEffect(() => {
     const onKeyPress = (e) => {
       console.log(e);
@@ -40,6 +40,9 @@ const Header = () => {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
+
+  const navRef = useRef();
+  useOnClickOutside(navRef, () => setOpenMenu(false));
 
   return (
     <nav className="w-full flex fixed justify-between gap-7 py-5 px-16 bg-primary-100 z-[999]">
@@ -128,10 +131,10 @@ const Header = () => {
       )}
 
       {/* Mobile nav */}
-
       {!isAboveMediaScreen && openMenu && (
         <div className="absolute top-0 left-0 h-screen w-full">
           <motion.div
+            ref={navRef}
             initial="hidden"
             whileInView="visible"
             variants={container}
