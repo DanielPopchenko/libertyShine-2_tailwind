@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaPhone } from 'react-icons/fa6';
 import { FaLocationDot } from 'react-icons/fa6';
 import { useMediaQuery } from '@mui/material';
+import { telNumber } from '../../App';
 
 const Footer = () => {
   const isAboveMediaScreen = useMediaQuery('(min-width:1160px)');
@@ -37,8 +38,8 @@ const Footer = () => {
           <span>
             <FaPhone fill="green" fontSize={32} />
           </span>
-          <a className="text-lg ml-3" href="tel:941 228 3012">
-            941 228 3012
+          <a className="text-lg ml-3" href={`tel:${telNumber}`}>
+            {telNumber}
           </a>
         </div>
       )}

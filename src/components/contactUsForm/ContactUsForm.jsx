@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPhone } from 'react-icons/fa6';
 import Form from './Form';
+import { telNumber } from '../../App';
 
 const ContactUsForm = () => {
   return (
@@ -15,7 +16,7 @@ const ContactUsForm = () => {
         {/* phone box */}
         <div className="flex flex-col justify-center md:block items-center mt-12 md:m-0 p-5">
           <div className="block text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl mb-4">FEEL FREE TO CALL US.</h2>
+            <h2 className="text-2xl md:text-4xl mb-4">FEEL FREE TO CALL.</h2>
             <span className="text-xl md:text-3xl">
               We’d love to hear from you.
             </span>
@@ -24,8 +25,8 @@ const ContactUsForm = () => {
             <span>
               <FaPhone fill="#54c036" fontSize={32} />
             </span>
-            <a className="text-black text-2xl ml-3" href="tel:941 228 3012">
-              941 228 3012
+            <a className="text-black text-2xl ml-3" href={`tel:${telNumber}`}>
+              856 761 56 31
             </a>
           </div>
         </div>

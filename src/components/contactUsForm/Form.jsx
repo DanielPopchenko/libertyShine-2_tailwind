@@ -105,14 +105,14 @@ const Form = () => {
           <Input type="text" placeholder="City" required name="city" />
         </label>
         <label className="sm:ml-3">
-          <span className="flex">Zip code</span>
+          <span className="flex">ZIP code</span>
           <ValidationError
-            prefix="Zip code"
+            prefix="ZIP code"
             field="zipcode"
             errors={state.errors}
           />
 
-          <Input type="text" placeholder="ZipCode" required name="zipcode" />
+          <Input type="text" placeholder="ZIP Code" required name="zipcode" />
         </label>
       </div>
 
