@@ -9,7 +9,7 @@ const childVariant = {
 const Service = ({ icon, title, text }) => {
   return (
     <motion.li
-      className="flex items-center flex-col min-h-[400px] md:min-h-[300px] max-w-[600px] md:max-w-[40%] text-center"
+      className="flex items-center flex-col min-h-[300px] md:min-h-[300px] max-w-[600px] md:max-w-[40%] text-center"
       variants={childVariant}
     >
       <span className="mb-5">{icon}</span>

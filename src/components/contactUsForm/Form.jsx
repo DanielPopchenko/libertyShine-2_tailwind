@@ -105,7 +105,7 @@ const Form = () => {
           <Input type="text" placeholder="City" required name="city" />
         </label>
         <label className="sm:ml-3">
-          <span className="flex">ZIP code</span>
+          <span className="flex">ZIP Code</span>
           <ValidationError
             prefix="ZIP code"
             field="zipcode"
@@ -119,7 +119,7 @@ const Form = () => {
       <button
         type="submit"
         disabled={state.submitting}
-        className="bg-primary-500 py-3 transition duration-300 px-6 rounded-md hover:text-secondary-500 text-white"
+        className="bg-[#54c036] py-3 transition duration-300 px-6 rounded-md hover:text-black text-white"
       >
         SUBMIT
       </button>

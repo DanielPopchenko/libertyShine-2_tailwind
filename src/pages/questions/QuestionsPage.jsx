@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Questions.module.css';
-import AccordionElement from '../../ui/accrdion/Accordion';
+
+import AccordionList from '../../ui/accrdion/Accordion';
 
 const QuestionsPage = () => {
   return (
@@ -12,7 +13,7 @@ const QuestionsPage = () => {
       </div>
 
       <div className={classes.content}>
-        <AccordionElement />
+        <AccordionList />
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ const Footer = () => {
               }}
               fill="rgb(243, 189, 28)"
             />{' '}
-            MANATEE, SARASOTA & HILLSBOROUGH COUNTIES
+            MANATEE, SARASOTA, HILLSBOROUGH COUNTIES & NEW JERSEY
           </span>
         </div>
       )}

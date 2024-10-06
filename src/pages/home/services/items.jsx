@@ -4,8 +4,17 @@ import { MdCleaningServices } from 'react-icons/md';
 import { MdOutlineFullscreen } from 'react-icons/md';
 import { MdConstruction } from 'react-icons/md';
 import { PiWashingMachine } from 'react-icons/pi';
+import { ImGift } from 'react-icons/im';
 
 export const services = [
+  {
+    id: '8o88sdj',
+    icon: <ImGift style={{ fontSize: 70 }} />,
+    title: 'CHRISTMAS DECORATION, REMOVAL, & STORAGE SERVICES',
+    text: 'With the busy holiday season, it can be difficult to find the time and energy to decorate your home. As a top holiday decorating company, we’re here to help you choose the perfect Christmas lights, décor, and more, with professional installation so you can fully enjoy the season. Our team offers fast and friendly service to ensure your satisfaction. We handle it all, from design to takedown and storage.',
+
+    // Let us take care of the details so you can relax and enjoy the festivities.
+  },
   {
     id: '8792kqhsd',
     icon: <FaHandsWash style={{ fontSize: 70 }} />,
