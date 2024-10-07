@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPhone } from 'react-icons/fa6';
 import Form from './Form';
-import { telNumber } from '../../App';
+import { floridaTelNumber, newJerseyTelNumber } from '../../App';
 
 const ContactUsForm = () => {
   return (
@@ -25,8 +25,22 @@ const ContactUsForm = () => {
             <span>
               <FaPhone fill="#54c036" fontSize={32} />
             </span>
-            <a className="text-black text-2xl ml-3" href={`tel:${telNumber}`}>
-              856 761 56 31
+            <a
+              className="text-black text-2xl ml-3"
+              href={`tel:${floridaTelNumber}`}
+            >
+              {floridaTelNumber} - For Florida
+            </a>
+          </div>
+          <div className="flex items-center mt-8">
+            <span>
+              <FaPhone fill="#54c036" fontSize={32} />
+            </span>
+            <a
+              className="text-black text-2xl ml-3"
+              href={`tel:${newJerseyTelNumber}`}
+            >
+              {newJerseyTelNumber} - For New Jersey
             </a>
           </div>
         </div>

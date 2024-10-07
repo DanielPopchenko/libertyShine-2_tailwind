@@ -6,7 +6,9 @@ import Portfolio from './pages/portfolio/PortfolioPage';
 import Questions from './pages/questions/QuestionsPage';
 import ServicesPage from './pages/services/ServicesPage';
 import PagesLayout from './pages/pagesLayout/PagesLayout';
-export const telNumber = '856 761 56 31';
+
+export const floridaTelNumber = '856 761 56 31';
+export const newJerseyTelNumber = '732 305 06 85';
 
 const App = () => {
   return (

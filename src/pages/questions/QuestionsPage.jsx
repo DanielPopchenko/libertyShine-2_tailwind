@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Questions.module.css';
-
 import AccordionList from '../../ui/accrdion/Accordion';
 
 const QuestionsPage = () => {

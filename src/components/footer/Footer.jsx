@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { FaPhone } from 'react-icons/fa6';
 import { FaLocationDot } from 'react-icons/fa6';
 import { useMediaQuery } from '@mui/material';
-import { telNumber } from '../../App';
+import { floridaTelNumber } from '../../App';
+import { newJerseyTelNumber } from '../../App';
 
 const Footer = () => {
   const isAboveMediaScreen = useMediaQuery('(min-width:1160px)');
@@ -30,17 +31,6 @@ const Footer = () => {
             />{' '}
             MANATEE, SARASOTA, HILLSBOROUGH COUNTIES & NEW JERSEY
           </span>
-        </div>
-      )}
-
-      {isAboveMediaScreen && (
-        <div className="inline-block md:flex items-center">
-          <span>
-            <FaPhone fill="green" fontSize={32} />
-          </span>
-          <a className="text-lg ml-3" href={`tel:${telNumber}`}>
-            {telNumber}
-          </a>
         </div>
       )}
     </footer>

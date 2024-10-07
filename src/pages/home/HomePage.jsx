@@ -6,7 +6,7 @@ import Layout from '../../components/layout/Layout';
 import Services from './services/Services';
 import ContactUsForm from '../../components/contactUsForm/ContactUsForm';
 import { motion } from 'framer-motion';
-import { telNumber } from '../../App';
+import { floridaTelNumber, newJerseyTelNumber } from '../../App';
 
 const Home = () => {
   return (
@@ -50,10 +50,16 @@ const Home = () => {
               </a>
               {/* PHONE NUMBER SHOUL BE CHANGED*/}
               <a
-                href={`tel:${telNumber}`}
+                href={`tel:${floridaTelNumber}`}
                 className="py-3 px-4 md:px-6 min-w-20 md:min-w-32 bg-primary-200 text-white rounded-lg text-wrap transition-all hover:text-secondary-500 hover:opacity-80"
               >
-                GIVE US A FREE CALL
+                FREE CALL TO FLORIDA
+              </a>
+              <a
+                href={`tel:${newJerseyTelNumber}`}
+                className="py-3 px-4 md:px-6 min-w-20 md:min-w-32 bg-primary-200 text-white rounded-lg text-wrap transition-all hover:text-secondary-500 hover:opacity-80"
+              >
+                FREE CALL TO NEW JERSEY
               </a>
             </motion.div>
           </motion.div>
